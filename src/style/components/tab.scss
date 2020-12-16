@@ -1,0 +1,31 @@
+.tab {
+	
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin-right: 24px;
+		user-select: none;
+
+		&.active {
+
+			.tab__link {
+				color: $main-text;
+				cursor: default;
+			}
+		}
+	}
+
+	&__link {
+		color: $secondary-text;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 24px;
+		transition: all .3s;
+
+		&:hover {
+			color: $main-text;
+		}
+	}
+}

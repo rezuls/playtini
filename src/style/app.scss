@@ -1,0 +1,23 @@
+//helpers style
+@import './helpers/all';
+
+//common style
+
+@import './common';
+
+// components
+
+@import './components/tab';
+@import './components/inputs';
+@import './components/btn';
+
+
+// partials
+
+@import "partials/header";
+@import "partials/footer";
+
+// pages 
+
+@import "pages/main";
+@import "sections/support";

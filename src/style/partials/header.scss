@@ -1,0 +1,53 @@
+.header {
+	padding-top: 24px;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		margin-left: -56px;
+	}
+
+	&__menu {
+		margin-left: 24px;
+	}
+
+	&__logo {
+		line-height: 0;
+
+		a {
+			display: block;
+			line-height: 0;
+			user-select: none;
+		}
+	}
+
+	&__item {
+		display: inline-block;
+		margin-right: 8px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+
+		&.active {
+
+			.header__link {
+				color: $main-text;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__link {
+		padding: 4px 8px;
+		color: $secondary-text;
+		font-weight: 700;
+		font-size: 16px;
+		transition: all .3s;
+		display: block;
+
+		&:hover {
+			color: $main-text;
+		}
+	}
+}

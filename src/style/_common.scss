@@ -1,0 +1,78 @@
+@include font-face('SourceSansPro', 'SourceSansPro-Regular', 400);
+@include font-face('SourceSansPro', 'SourceSansPro-Bold', 700);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $main-bg;
+    font-family: $SourceSansPro;
+    line-height: 1.5;
+    height: 100vh;
+    margin: 0;
+    color: $main-text;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+	@include minxs {
+        max-width: 540px;
+    }
+
+    @include minsm {
+        max-width: 720px;
+    }
+
+    @include minmd {
+        max-width: 960px;
+    }
+
+    @include minlg {
+        max-width: 1228px;
+    }
+
+    @include minxl {
+        max-width: 1800px;
+        padding: 0;
+        margin-left: 80px;
+    }
+}
+
+.heading {
+    font-weight: 700;
+    color: $main-text;
+    font-style: normal;
+
+    &--2 {
+        font-size: 48px;
+        line-height: 64px;
+    }
+
+    &--3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    &--4 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
